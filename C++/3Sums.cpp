@@ -22,9 +22,8 @@ vector<vector<int>> threeSum(vector<int> &nums)
 {
     sort(nums.begin(), nums.end()); //sorting
 
-    vector<vector<int>> ans; //vector of vectors to store all the triplets
-                             //to store a,b,c
-
+    vector<vector<int>> ans; //vector of vectors to store all the triplets(to store a,b,c)
+    
     for (int i = 0; i < nums.size() - 2; i++)
     {
         if (i == 0 || (i > 0 && nums[i] != nums[i - 1]))
@@ -67,7 +66,7 @@ vector<vector<int>> threeSum(vector<int> &nums)
 }
 
 int main()
-{
+{   cout<<"\n Welcome to 3sums.cpp \n";
     vector<int> vect;
     int a, n;
     cout << "Enter number of elements" << endl;
